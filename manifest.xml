@@ -1,0 +1,13 @@
+<package>
+  <description brief="oroGen integration of the Paroscientific Pressure Sensor driver from drivers/pressure_paroscientific">
+  oroGen integration of the Paroscientific Pressure driver
+  </description>
+  <author>Hauke Büttner/hbuettner@marum.de</author>
+  <license></license>
+  <url>http://www.marum.de</url>
+  <logo>http://www.marum.de/img/logo/start_de.jpg/</logo>
+  <depend package="drivers/orogen/iodrivers_base" />
+  <depend package="drivers/orogen/aggregator" />
+  <depend package="drivers/pressure_paroscientific" />
+</package>
+
