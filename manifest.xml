@@ -7,7 +7,7 @@
   <url>http://www.marum.de</url>
   <logo>http://www.marum.de/img/logo/start_de.jpg/</logo>
   <depend package="drivers/orogen/iodrivers_base" />
-  <depend package="drivers/orogen/aggregator" />
   <depend package="drivers/pressure_paroscientific" />
+  <tags>underwater</tags>
 </package>
 
