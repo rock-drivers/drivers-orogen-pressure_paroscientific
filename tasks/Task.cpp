@@ -12,12 +12,14 @@ Task::Task(std::string const& name)
 }
 
 Task::Task(std::string const& name, RTT::ExecutionEngine* engine)
-    : TaskBase(name, engine)
+    : TaskBase(name, engine),
+      mDriver(0)
 {
 }
 
 Task::~Task()
 {
+	delete mDriver;
 }
 
 
@@ -33,6 +35,7 @@ bool Task::configureHook()
     if (!_io_port.get().empty())
     {
         mDriver->open(_io_port.get());
+        std::cout<<"open-uri ok "<<std::endl;
     }
 
     setDriver(mDriver);
@@ -72,10 +75,10 @@ void Task::processIO()
 // }
 
 
-void Task::stopHook()
-{
-    TaskBase::stopHook();
-}
+//void Task::stopHook()
+//{
+//    TaskBase::stopHook();
+//}
 
 
 // void Task::cleanupHook()

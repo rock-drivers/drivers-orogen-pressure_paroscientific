@@ -23,7 +23,7 @@ end
 
 Orocos.run 'pressure_paroscientific::Task' => 'paro' do
     Orocos.logger.level = Logger::DEBUG
-    puts "deployed the ressure_paroscientific::Task task"
+    puts "deployed the pressure_paroscientific::Task task"
 
     paro = Orocos::TaskContext.get 'paro'
     paro.io_port = io_port
