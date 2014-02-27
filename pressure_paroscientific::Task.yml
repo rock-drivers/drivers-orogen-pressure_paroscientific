@@ -1,6 +1,9 @@
 --- name:default
 # the device address. It can either be serial://PATH[:baudrate], udp://IP_OR_HOSTNAME[:PORT] or tcp://IP_OR_HOSTNAME[:PORT]. Leave empty if you mean to use the io_raw_in and io_raw_out ports.
-io_port: 'serial:///dev/ttyUSB0:19200'
+#io_port: 'serial:///dev/ttyUSB0:19200' #paroscientific
+#io_port: 'serial:///dev/ttyUSB0:9600'  #arduino adapter
+io_port: 'tcp://10.112.253.198:3001'
+
 # the timeout on read. Defaults to one second
 io_read_timeout:
   microseconds: 1000000
